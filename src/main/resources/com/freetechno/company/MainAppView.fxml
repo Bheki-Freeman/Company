@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.freetechno.company.Controller">
+   <children>
+      <Label layoutX="89.0" layoutY="214.0" text="The main Page">
+         <font>
+            <Font name="Gloucester MT Extra Condensed" size="60.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

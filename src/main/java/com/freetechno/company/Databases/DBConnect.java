@@ -3,12 +3,11 @@ import java.sql.*;
 
 public class DBConnect {
 
-    Connection conn = null;
     String url = "jdbc:mysql://localhost/company";
     String user_name = "Freeman";
     String user_pass = "Swaandiswa12";
 
-    public Connection getConnection(){
+    public Connection getConnection(Connection conn){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(url, user_name, user_pass);
@@ -20,5 +19,21 @@ public class DBConnect {
         return conn;
         }
 
+    //Close the connection
+    public Connection closeConnection(Connection conn){
+        if(conn != null){
+            try{
+                conn.close();
+                System.out.println("Disconnected from Database!");
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+        return  conn;
     }
+
+    }
+
+
+
 
