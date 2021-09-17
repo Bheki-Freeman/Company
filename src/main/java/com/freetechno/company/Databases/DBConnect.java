@@ -5,9 +5,10 @@ public class DBConnect {
 
     String url = "jdbc:mysql://localhost/company";
     String user_name = "Freeman";
-    String user_pass = "Swaandiswa12";
+    String user_pass = "PassFreeman";
+    Connection conn;
 
-    public Connection getConnection(Connection conn){
+    public Connection getConnection(){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(url, user_name, user_pass);

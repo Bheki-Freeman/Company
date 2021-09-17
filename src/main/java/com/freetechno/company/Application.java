@@ -14,7 +14,7 @@ public class Application extends javafx.application.Application {
         Scene scene = new Scene(fxmlLoader.load(), 400, 500);
         stage.setTitle("The Company");
         stage.setScene(scene);
-//        stage.initStyle(StageStyle.UNDECORATED); //To remove the default closing  and maximising buttons
+        stage.initStyle(StageStyle.UNDECORATED); //Remove the default closing  and maximising buttons
         stage.show();
     }
 

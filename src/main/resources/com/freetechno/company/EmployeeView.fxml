@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.freetechno.company.EmployeeController">
+   <children>
+      <Label layoutX="14.0" text="Employees" textFill="#1289dd">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_logout" layoutX="594.0" layoutY="14.0" mnemonicParsing="false" text="Logout" textFill="#0b80d3">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_home" layoutX="476.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchBackHome" text="Home" textFill="#0b80d3">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="tbl_employees" layoutX="5.0" layoutY="92.0" prefHeight="159.0" prefWidth="687.0">
+        <columns>
+          <TableColumn fx:id="col_firstname" prefWidth="75.0" text="Firstname" />
+          <TableColumn fx:id="col_m_name" prefWidth="52.0" text="Middlename" />
+            <TableColumn fx:id="col_last_name" prefWidth="74.0" text="LastName" />
+            <TableColumn fx:id="col_ssn" prefWidth="70.0" text="Social Security No." />
+            <TableColumn fx:id="col_birthday" prefWidth="72.0" text="Birthday" />
+            <TableColumn fx:id="col_address" prefWidth="107.0" text="Address" />
+            <TableColumn fx:id="col_gender" prefWidth="48.0" text="Gender" />
+            <TableColumn fx:id="col_mgr_ssn" prefWidth="53.0" text="Mgr_ssn" />
+            <TableColumn fx:id="col_salary" prefWidth="61.0" text="Salary" />
+            <TableColumn fx:id="col_department_no" prefWidth="74.0" text="Dep. No." />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt_name" layoutX="5.0" layoutY="279.0" promptText="First Name" />
+      <TextField fx:id="txt_m_name" layoutX="180.0" layoutY="279.0" promptText="MIddle Name" />
+      <TextField fx:id="txt_lastname" layoutX="370.0" layoutY="279.0" promptText="Last Name" />
+      <TextField fx:id="txt_ssn" layoutX="541.0" layoutY="279.0" promptText="Social Security Number" />
+      <TextField fx:id="txt_gender" layoutX="181.0" layoutY="322.0" prefHeight="25.0" prefWidth="68.0" promptText="Gender" />
+      <TextField fx:id="txt_mgr_ssn" layoutX="5.0" layoutY="362.0" promptText="Manager SSN" />
+      <TextArea fx:id="txt_address" layoutX="370.0" layoutY="322.0" prefHeight="67.0" prefWidth="319.0" promptText="Type in Employee Address" />
+      <TextField fx:id="txt_salary" layoutX="180.0" layoutY="362.0" promptText="Salary" />
+      <DatePicker fx:id="dtd_birthday" layoutX="5.0" layoutY="322.0" prefHeight="25.0" prefWidth="149.0" promptText="Birth day" />
+      <TextField fx:id="txt_department_no" layoutX="261.0" layoutY="322.0" prefHeight="25.0" prefWidth="68.0" promptText="Dept. No." />
+      <Button fx:id="btn_add" layoutX="14.0" layoutY="438.0" mnemonicParsing="false" text="ADD" textFill="#0b80d3">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_update" layoutX="159.0" layoutY="438.0" mnemonicParsing="false" text="UPDATE" textFill="#0b80d3">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_load" layoutX="359.0" layoutY="438.0" mnemonicParsing="false" text="LOAD" textFill="#0b80d3">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_delete" layoutX="515.0" layoutY="438.0" mnemonicParsing="false" text="DELETE" textFill="#0b80d3">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
